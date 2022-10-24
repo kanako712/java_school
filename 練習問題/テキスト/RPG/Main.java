@@ -6,7 +6,7 @@ public class Main{
 
        //2.フィールドに初期値をセット
        h.name = "ミナト";
-       h.hp = 80;
+       h.hp = 100;
 
        Matango m1 = new Matango();
        m1.hp = 50;
