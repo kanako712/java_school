@@ -25,5 +25,13 @@ public class Hero{
         System.out.println("最終HPは"+this.hp+"でした");
     }
     
+    public Hero(String name){//コンストラクタ情報渡し
+        this.hp = 100;
+        this.name = name; //メインから引数渡す
+    }
+
+    public Hero(){
+        this("ダミー");
+    }
 
 }
