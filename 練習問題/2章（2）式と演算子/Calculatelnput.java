@@ -2,6 +2,19 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+/*
+ *2章　4）
+ * キーボードから2つの整数値を入力して、その和、差、積、商を計算し、計算結果を表示してください。	
+    Class名：CalculateInput	
+	String型をint型に変換するには、
+	Integer.parseInt("文字列")というメソッドを使います。
+	【例】
+	文字を入力してください
+	もしくは
+	String strNum = "20";
+	int  intNum = Integer.parseInt(strNum); 
+ */
+
 public class CalculateInput {
 	public static void main(String[] args) {
 		// InputStreamReaderとBufferedReaderを用意する

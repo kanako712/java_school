@@ -1,3 +1,11 @@
+/*
+ * 3章　switch文　2）
+ * 【class Omikuji】　★★
+    大吉、中吉、小吉、吉、凶、大凶をランダムに出力するプログラムを作成せよ。
+    （乱数の発生には Math.random()メソッドAPIやネットで調べて使用）
+    ※可能であれば、switch文を使って、出る目の割合を変えてください。
+ */
+
 public class Omikuji {
     public static void main(String[] args) {
         System.out.println("占いますか？");

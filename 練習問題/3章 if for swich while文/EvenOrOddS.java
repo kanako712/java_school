@@ -2,6 +2,12 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+/*
+ * 3章　switch文　1）
+ * 【class EvenOrOddS】　★
+    入力した値が偶数か奇数かを判定するプログラムを作成せよ
+ */
+
 public class EvenOrOddS {
 	public static void main(String[] args) {
 		// InputStreamReaderとBufferedReaderを用意する

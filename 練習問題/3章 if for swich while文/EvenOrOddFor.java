@@ -1,3 +1,14 @@
+/*
+ * 3章　For文　1）
+ * 1から10の数字の偶数、奇数を表示する。
+ * [表示結果]
+　　　1は奇数です。  
+　　　2は偶数です。
+　　　　　↓
+　　　10は偶数です。
+ */
+
+
 public class EvenOrOddFor {
     public static void main(String[] args) {
     //3章　for文　2）1から10の数字の偶数、奇数を表示する。    

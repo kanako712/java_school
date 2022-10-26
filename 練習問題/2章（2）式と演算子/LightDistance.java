@@ -2,6 +2,15 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+/*
+2章　3）
+ * 光の速度を秒速30万kmとします。	
+   このとき、光が1日に進む距離をJava言語を使って計算して表示してください。	
+   Class名：LightDistance	
+	※いろんなパターンがありますよ。
+ */
+
+
 public class LightDistance {
 	public static void main(String[] args) {
 		// InputStreamReaderとBufferedReaderを用意する

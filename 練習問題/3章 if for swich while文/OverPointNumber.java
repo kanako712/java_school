@@ -1,3 +1,10 @@
+/*
+ * 3章　while文　
+ * 【class OverPointNumber】　※while文を使ってください。	
+　　2のn乗  ＞ 100,000を満たす一番小さなｎと、そのときの値を表示してください。	
+　　（答え）　n = 17 、　num = 131072　になります。	
+ */
+
 public class OverPointNumber {
     public static void main(String[] args) {
 
