@@ -11,6 +11,8 @@ public class Main{
         sh.attack(m);
 
         Matango m = new Matango(35,'A');
+        PoisonMatango pm = new PoisonMatango('B');
 
+        System.out.println(pm.Dokukogeki);
     }
 }

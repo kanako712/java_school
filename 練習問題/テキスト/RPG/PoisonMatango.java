@@ -22,12 +22,12 @@ int Dokukogeki = 5;//ア、ウ初期値設定
     public void attack(Hero h){//エ　オーバーライド　上書き
         super.attack(h);//①親クラス呼ぶ
 
-        if(Dokukogeki > 0){//②
+        if(this.Dokukogeki > 0){//②
             System.out.println("さらに毒の胞子をばらまいた！");//③
-            int damezi = h.hero / 5;
-            h.hero -= damezi;
+            int damezi = h.hp / 5;//h.hpから割る5する！
+            h.hp -= damezi;
             System.out.println(damezi+"ポイントダーメージ！");//④
-            Dokukogeki--;//⑤
+            this.Dokukogeki--;//⑤ 自分のフィールドを参照するからthis.
         }
     }
 
