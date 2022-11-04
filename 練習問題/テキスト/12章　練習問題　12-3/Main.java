@@ -10,17 +10,20 @@
 public class Main{
     public static void main(String[] args) {
 
-         //1.配列インスタンスを生成
-         Y[] y = new Y[2];
+         //1.配列を生成
+         Y[] y = new Y[2];//要素数2の配列用意　yは配列変数名決める
         
          //配列へ代入する
         y[0] = new A();
         y[1] = new B();
 
         //拡張for文で回す
-        for(Y yy : y){
+        for(Y yy : y){//yy、for文内の変数名決める
             yy.b();
         }
    }
+
 }
+
+//　Y[] y = {new A(),new B()};で1行でもOK！
 
