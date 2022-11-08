@@ -11,11 +11,31 @@
  */
 
 
-public class Attacker extends Creature{
-    private int attack;//①
-
-    public Attacker(){
-        
+public abstract class Attacker extends Creature{
+    /*❶フィールド・プライベート */
+	private int attack;
+	/*❷引数3つ　　　　　　　　 */
+    public Attacker(String name,int seimeiti,int attack){
+		super(name,seimeiti);
+		this.attack = attack;
     }
-    
+	/*❷引数1つ　　　　　　　　 */
+	public Attacker(int attack){
+		this.attack = attack;
+    }
+	/*❷引数なし　　　　　　　　 *///コンストラクタ
+	public Attacker(){
+		super();//書かなくてもOK
+    }
+	/*❸アクセサattack　　　　　 */
+	public int getAttack(){
+		return this.attack;
+	}
+	public void setAttack(int attack){
+		this.attack = attack;
+	}
+
+    /*❹攻撃する抽象メソッド　　 */
+	public abstract void attack(Attacker attacker);
+	
 }

@@ -1,3 +1,4 @@
+//13-3 13-2で解答したエラーを解決するためにgetとsetを追加
 /*//13-4 13-3で作成したWizard,wandクラスのsetメソッドについて
   引数の妥当性検証を追加、引数が妥当でない場合にはthrow new IllegalArgumentException
   を用いて何らかのエラーメッセージを表示し、プログラム中断する
@@ -16,49 +17,49 @@ public class Wizard {
 
    public String getName(){//getメソッド
     return this.name;
- }
- public void setName(String name){//setメソッド
-    if(name.length() < 3){//短かすぎ
+   }
+   public void setName(String name){//setメソッド
+      if(name == null || name.length() < 3){//短かすぎ
         throw new IllegalArgumentException("名前が短かすぎる。処理を中断");
-    }
-    this.name = name;
- }
+      }
+   this.name = name;
+   }
 
- public int getHp(){//getメソッド
-    return this.hp;
- }
- public void setHp(int hp){//setメソッド
-    if(hp < 0){//④HPが0より小さい
+   public int getHp(){//getメソッド
+      return this.hp;
+   }
+   public void setHp(int hp){//setメソッド
+      if(hp < 0){//④HPが0より小さい
         this.hp = 0;
-    }
-    this.hp = hp;
- }
+      }
+   this.hp = hp;
+   }
 
- public int getMp(){//getメソッド
-    return this.mp;
- }
- public void setMp(int mp){//setメソッド
-    if(mp < 0){//④HPが0より小さい
+   public int getMp(){//getメソッド
+      return this.mp;
+   }
+   public void setMp(int mp){//setメソッド
+      if(mp < 0){//④HPが0より小さい
         throw new IllegalArgumentException("HPがない。処理を中断");
-    }   
-    this.mp = mp;
- }
+      }   
+   this.mp = mp;
+   }
 
- public Wand getWand(){//getメソッド
-    return this.wand;
- }
- public void setWand(Wand wand){//setメソッド
-    if(wand == null){//③杖持ってない　
+   public Wand getWand(){//getメソッド
+      return this.wand;
+   }
+   public void setWand(Wand wand){//setメソッド
+      if(wand == null){//③解答　杖持ってない　
         throw new IllegalArgumentException("杖がない。処理を中断");
-    }
-    this.wand = wand;
- }
+      }
+   this.wand = wand;
+   }
 
    public void heal(Hero h){
         int basePoint = 10;  //基本回復ポイント
-        int recovPoint = (int)(basePoint * this.getwand.getpower); //杖による増幅
+        int recovPoint = (int)(basePoint * this.getWand().getPower()); //杖による増幅
         h.setHp(h.getHp() + recovPoint);//勇者のHPを回復する
-        System.out.println(h.getName+"のHPを"+recovPoint+"回復した！");
+        System.out.println(h.getName()+"のHPを"+recovPoint+"回復した！");
     }  
 
 }
