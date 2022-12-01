@@ -10,6 +10,16 @@ import java.io.IOException;
 
 public class StackTraceTest {
     public static void main(String[] args){
+        try{
+            mathodA();
+            mathodB();
+            mathodC();
+
+        }catch(IllegalArgumentException e){
+            //例外がどこから投げられたのかを表示するサンプルコード
+            e.printStackTrace();
+
+        }
 
     }
 
@@ -17,7 +27,9 @@ public class StackTraceTest {
         
     }
 
-    public static void mathodB()throws IOException{
+    public static void mathodB(){
+        //例外を発生させる
+        throw new IllegalArgumentException();
         
     }
 
