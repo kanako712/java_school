@@ -33,14 +33,16 @@ public class Q16 {
 			String name = reader.readLine();
 			// ↑ここまで編集禁止
 			// ↓に処理を記述------------------------------------
-            for (String key:studentsMap.keySet()){
-                int value = studentsMap.get(key);
-			    name = ;}
+			if(studentsMap.containsKey(name)){
+				int value = studentsMap.get(name);
+				System.out.println(name+"さんの点数は"+value+"点です");
 
-            System.out.println(name+"さんの点数は"+value+"点です");
-            }
-			
-			
+			}else if(name.isEmpty()){
+				System.out.println("文字の入力がありません");
+
+			}else{
+				System.out.println(name+"さんは存在しません");
+			}	
 			
 			// ↑に処理を記述------------------------------------
 			// ↓ここから編集禁止
@@ -48,5 +50,21 @@ public class Q16 {
 			e.printStackTrace();
 		}
 	}
+
 }
 
+
+/*for (String key:studentsMap.keySet()){
+			int value = studentsMap.get(key);
+				if(key.equals(name) == true){
+				System.out.println(key+"さんの点数は"+value+"点です");
+				return;
+				}
+			}
+            for (String key:studentsMap.keySet()){
+			int value = studentsMap.get(key);
+				if(key.equals(name) == false){
+				System.out.println(name+"さんは存在しません");
+				return;
+				}
+			}*/

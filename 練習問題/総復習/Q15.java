@@ -6,7 +6,7 @@
 import java.util.HashSet;
 public class Q15 {
     public static void main(String[] args){
-        HashSet<String>name=new HashSet<>();
+        HashSet<String> name = new HashSet<>();
 
         name.add("塩");
         name.add("味噌");
